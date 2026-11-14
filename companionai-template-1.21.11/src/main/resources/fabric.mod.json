@@ -1,0 +1,52 @@
+{
+	"schemaVersion": 1,
+	"id": "companionai",
+	"version": "${version}",
+	"name": "AI陪玩",
+	"description": "一个我的世界的AI陪玩Mod",
+	"authors": [
+		"hghgjk"
+	],
+	"contact": {
+		"homepage": "https://www.curseforge.com/minecraft/mc-mods/free-cam",
+		"sources": "https://github.com/MinecraftFreecam/Freecam",
+		"issues": "https://github.com/MinecraftFreecam/Freecam/issues"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/companionai/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"main": [
+			"com.companion.CompanionAI"
+		],
+		"client": [
+			"com.companion.CompanionAIClient"
+		]
+	},
+	"mixins": [
+		"companionai.mixins.json",
+		{
+			"config": "companionai.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	},
+	"custom": {
+		"modmenu": {
+			"links": {
+				"modmenu.crowdin": "https://crowdin.com/project/freecam",
+				"modmenu.curseforge": "https://www.curseforge.com/minecraft/mc-mods/free-cam",
+				"modmenu.modrinth": "https://modrinth.com/mod/freecam",
+				"modmenu.github_releases": "https://github.com/MinecraftFreecam/Freecam/releases"
+			}
+		}
+	}
+}

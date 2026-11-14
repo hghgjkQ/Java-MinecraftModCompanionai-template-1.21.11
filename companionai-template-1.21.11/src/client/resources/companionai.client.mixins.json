@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "com.companion.mixin.client",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "BossBarHudAccessor",
+    "ClientPlayNetworkHandlerMixin",
+    "ExampleClientMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "mixins": [
+  ]
+}
